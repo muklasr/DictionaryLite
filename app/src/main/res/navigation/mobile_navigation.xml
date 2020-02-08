@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_translate">
+
+    <fragment
+        android:id="@+id/nav_translate"
+        android:name="com.muklas.dictionarylite.ui.translate.TranslateFragment"
+        android:label="Translate"
+        tools:layout="@layout/fragment_translate" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.muklas.dictionarylite.ui.history.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/nav_word"
+        android:name="com.muklas.dictionarylite.ui.word.WordFragment"
+        android:label="Word Management"
+        tools:layout="@layout/fragment_word" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.muklas.dictionarylite.ui.about.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.muklas.dictionarylite.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.muklas.dictionarylite.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>

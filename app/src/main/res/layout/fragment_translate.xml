@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etWord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:hint="Search word.."
+        android:inputType="text"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFrom"
+        style="@style/LanguageText"
+        android:text="@string/indonesian"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnSwitch"
+        app:layout_constraintTop_toBottomOf="@id/etWord" />
+
+    <ImageButton
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@color/colorPrimary"
+        android:padding="16dp"
+        android:src="@drawable/ic_translate_black_24dp"
+        android:tint="#FFFFFF"
+        app:layout_constraintLeft_toRightOf="@id/tvFrom"
+        app:layout_constraintRight_toLeftOf="@id/tvTo"
+        app:layout_constraintTop_toTopOf="@id/tvFrom" />
+
+    <TextView
+        android:id="@+id/tvTo"
+        style="@style/LanguageText"
+        android:text="@string/english"
+        app:layout_constraintLeft_toRightOf="@id/btnSwitch"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etWord" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@id/tvFrom"
+        tools:listitem="@layout/item_result" />
+</androidx.constraintlayout.widget.ConstraintLayout>
