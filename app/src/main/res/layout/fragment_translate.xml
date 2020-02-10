@@ -10,14 +10,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:hint="Search word.."
+        android:hint="@string/search_word"
         android:inputType="text"
         android:padding="@dimen/activity_horizontal_margin"
         android:textColor="#FFFFFF"
         android:textStyle="normal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/tvFrom"
@@ -38,7 +39,8 @@
         android:tint="#FFFFFF"
         app:layout_constraintLeft_toRightOf="@id/tvFrom"
         app:layout_constraintRight_toLeftOf="@id/tvTo"
-        app:layout_constraintTop_toTopOf="@id/tvFrom" />
+        app:layout_constraintTop_toTopOf="@id/tvFrom"
+        android:contentDescription="@string/switch_button" />
 
     <TextView
         android:id="@+id/tvTo"

@@ -37,7 +37,9 @@ class TranslateFragment : Fragment(), View.OnClickListener {
         homeViewModel =
             ViewModelProviders.of(this).get(TranslateViewModel::class.java)
         idToEnHelper = IdToEnHelper(context as Context)
+        enToIdHelper = EnToIdHelper(context as Context)
         idToEnHelper.open()
+        enToIdHelper.open()
         return inflater.inflate(R.layout.fragment_translate, container, false)
     }
 
@@ -56,7 +58,6 @@ class TranslateFragment : Fragment(), View.OnClickListener {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if (!s.isNullOrEmpty())
                     loadData(s.toString())
             }
 
@@ -79,9 +80,13 @@ class TranslateFragment : Fragment(), View.OnClickListener {
             tvFrom.text = getString(R.string.indonesian)
             tvTo.text = getString(R.string.english)
         }
+        loadData(etWord.text.toString())
     }
 
     private fun loadData(word: String) {
+        var arg = word
+        if (word.isEmpty())
+            arg = "-"
         adapter = ListAdapter()
         adapter.notifyDataSetChanged()
         rvResult.layoutManager = LinearLayoutManager(context)
@@ -89,7 +94,11 @@ class TranslateFragment : Fragment(), View.OnClickListener {
 
         GlobalScope.launch(Dispatchers.Main) {
             val deferred = async(Dispatchers.IO) {
-                val cursor = idToEnHelper.queryByWord(word)
+                val cursor = if (idToEn) {
+                    idToEnHelper.queryByWord(arg)
+                } else {
+                    enToIdHelper.queryByWord(arg)
+                }
                 MappingHelper.mapCursorToArrayList(cursor)
             }
             val result = deferred.await()
@@ -97,7 +106,6 @@ class TranslateFragment : Fragment(), View.OnClickListener {
                 adapter.setData(result)
             }
         }
-
     }
 
 }

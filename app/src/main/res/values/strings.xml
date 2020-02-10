@@ -19,4 +19,6 @@
     <string name="about">About</string>
     <string name="indonesian">Indonesian</string>
     <string name="english">English</string>
+    <string name="search_word">Search word..</string>
+    <string name="switch_button">Switch Button</string>
 </resources>

@@ -74,7 +74,7 @@ class EnToIdHelper(context: Context) {
         return database.query(
             DATABASE_TABLE,
             null,
-            "$WORD LIKE '%$word%'",
+            "$WORD LIKE '$word%'",
             null,
             null,
             null,
