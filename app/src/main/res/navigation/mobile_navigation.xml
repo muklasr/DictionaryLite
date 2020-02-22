@@ -12,15 +12,15 @@
         tools:layout="@layout/fragment_translate" />
 
     <fragment
-        android:id="@+id/nav_history"
-        android:name="com.muklas.dictionarylite.ui.history.HistoryFragment"
-        android:label="History"
-        tools:layout="@layout/fragment_history" />
+        android:id="@+id/nav_favorite"
+        android:name="com.muklas.dictionarylite.ui.favorite.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite" />
 
     <fragment
         android:id="@+id/nav_word"
         android:name="com.muklas.dictionarylite.ui.word.WordFragment"
-        android:label="Word Management"
+        android:label="My Word"
         tools:layout="@layout/fragment_word" />
 
     <fragment
@@ -29,15 +29,4 @@
         android:label="About"
         tools:layout="@layout/fragment_about" />
 
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.muklas.dictionarylite.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.muklas.dictionarylite.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
 </navigation>
