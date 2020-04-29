@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Dictionary Lite</string>
+    <string name="app_name">Simple Dictionary</string>
     <string name="nav_header_desc">Navigation header</string>
 
     <string name="translate">Terjemah</string>
@@ -25,7 +25,8 @@
     <string name="delete">Hapus</string>
     <string name="update_word">Ubah Kata</string>
     <string name="developer">by @adwitya.dev</string>
-    <string name="version">v. 1.0</string>
+    <string name="version">versi 1.0</string>
     <string name="no_data">Tidak ada data</string>
     <string name="speech_button">Speech Button</string>
+    <string name="scan_button">Scan Button</string>
 </resources>

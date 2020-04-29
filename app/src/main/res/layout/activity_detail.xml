@@ -4,13 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/activity_horizontal_margin"
     tools:context=".ui.DetailActivity">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewWord"
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
+        android:background="@drawable/bg_action_bar"
+        app:layout_constraintBottom_toTopOf="@id/cardView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="32dp"
+        app:cardCornerRadius="@dimen/activity_vertical_margin"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent">
@@ -21,6 +29,7 @@
             android:background="#FFFFFF"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingTop="8dp"
+            android:orientation="vertical"
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingBottom="8dp">
 
@@ -29,26 +38,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
+                android:textSize="28sp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:textStyle="bold"
                 tools:text="Word" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/cardViewWord"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="8dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#FFFFFF"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingTop="8dp"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingBottom="8dp">
 
             <TextView
                 android:id="@+id/tvTranslation"

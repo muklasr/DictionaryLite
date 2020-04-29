@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/nav_translate"
-        android:name="com.muklas.dictionarylite.ui.translate.TranslateFragment"
+        android:name="com.adwitya.simpledictionary.ui.translate.TranslateFragment"
         android:label="Translate"
         tools:layout="@layout/fragment_translate" />
 
     <fragment
         android:id="@+id/nav_favorite"
-        android:name="com.muklas.dictionarylite.ui.favorite.FavoriteFragment"
+        android:name="com.adwitya.simpledictionary.ui.favorite.FavoriteFragment"
         android:label="Favorite"
         tools:layout="@layout/fragment_favorite" />
 
     <fragment
         android:id="@+id/nav_word"
-        android:name="com.muklas.dictionarylite.ui.word.WordFragment"
+        android:name="com.adwitya.simpledictionary.ui.word.WordFragment"
         android:label="My Word"
         tools:layout="@layout/fragment_word" />
 
     <fragment
         android:id="@+id/nav_about"
-        android:name="com.muklas.dictionarylite.ui.about.AboutFragment"
+        android:name="com.adwitya.simpledictionary.ui.about.AboutFragment"
         android:label="About"
         tools:layout="@layout/fragment_about" />
 

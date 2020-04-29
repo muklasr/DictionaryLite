@@ -9,7 +9,7 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/bg_action_bar"
         app:tabIndicatorColor="@android:color/white"
         app:tabSelectedTextColor="@android:color/white" />
 
