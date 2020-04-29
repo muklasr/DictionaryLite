@@ -1,7 +1,7 @@
 ## Dictionary Lite
 ![Logo](https://i.ibb.co/T4rBLpP/thumbnail.png)
 
-Dictionary Lite is a digital Indonesian-English dictionary developed using  Kotlin and SQL database.
+Dictionary Lite is a digital Indonesian-English dictionary developed using  Kotlin and SQLite database.
 
 ### Features
 - [x] Translate Indonesian to English
