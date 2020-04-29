@@ -5,7 +5,7 @@ Dictionary Lite is a digital Indonesian-English dictionary developed using  Kotl
 
 ### Features
 - [x] Translate Indonesian to English
-- [x] translate English to Indonesian
+- [x] Translate English to Indonesian
 - [x] Offline (SQLite Database)
 - [x] Text To Speech
 - [x] Save Favorite Words
@@ -21,6 +21,6 @@ Dictionary Lite is a digital Indonesian-English dictionary developed using  Kotl
 <img src="https://i.ibb.co/TcQwNCK/tia329173447263211702.png" width="200" title="Translate" alt="Translate"/>
 <img src="https://i.ibb.co/g4PQ2n0/tia1219951173058269093.png" width="200" title="Favorite Word" alt="Favorite Word"/>
 <br>
-<img src="https://i.ibb.co/kmLwPSC/tia3339534315910431551.png" width="200" title="Add or Update Custom Word" alt="Add or Update Custom Word"/>
-<img src="https://i.ibb.co/ns2Bqw1/tia4981247385905851198.png" width="200" title="Dialog" alt="Dialog"/>
+<img src="https://i.ibb.co/kmLwPSC/tia3339534315910431551.png" width="200" title="Add Custom Word" alt="Add or Update Custom Word"/>
+<img src="https://i.ibb.co/ns2Bqw1/tia4981247385905851198.png" width="200" title="Update or Delete Custom Word" alt="Update or Delete Custom Word"/>
 </p>
